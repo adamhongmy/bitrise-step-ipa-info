@@ -6,7 +6,6 @@ set -e
 
 export BUNDLE_GEMFILE="$THIS_SCRIPT_DIR/Gemfile"
 
-bundle update --bundler
 bundle config set --local without "test"
 bundle install --jobs 20 --retry 5
 
